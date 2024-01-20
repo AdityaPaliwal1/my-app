@@ -19,6 +19,7 @@ import {
   Tr,
   Th,
   Td,
+  Heading,
 } from "@chakra-ui/react";
 
 
@@ -67,37 +68,39 @@ export default function PublicDashboard() {
 
   return (
     <>
+    <Heading></Heading>
       <Table variant="simple" w={"40vw"} mx={"auto"}
       border={"1px solid gray"}
-      overflowX={"auto"}>
+      overflowX={"auto"}
+      mb={"7"}>
         <Tbody>
+            <Tr>
+            <Th  border={"1px solid gray"}>Name</Th>
+            <Td  border={"1px solid gray"}>{data.name}  {data.surname}</Td>
+            </Tr>
           <Tr>
-            <Th>Name</Th>
-            <Td>{data.name}  {data.surname}</Td>
+            <Th  border={"1px solid gray"}>Mobile</Th>
+            <Td  border={"1px solid gray"}>{data.mobile}</Td>
           </Tr>
           <Tr>
-            <Th>Mobile</Th>
-            <Td>{data.mobile}</Td>
+            <Th  border={"1px solid gray"}>Date</Th>
+            <Td Td border={"1px solid gray"}>{data.date}</Td>
           </Tr>
           <Tr>
-            <Th>Date</Th>
-            <Td>{data.date}</Td>
+            <Th  border={"1px solid gray"}>Time</Th>
+            <Td  border={"1px solid gray"}>{data.time}</Td>
           </Tr>
           <Tr>
-            <Th>Time</Th>
-            <Td>{data.time}</Td>
+            <Th  border={"1px solid gray"}>HeartRate</Th>
+            <Td  border={"1px solid gray"}>{data.hr}</Td>
           </Tr>
           <Tr>
-            <Th>HeartRate</Th>
-            <Td>{data.hr}</Td>
+            <Th  border={"1px solid gray"}>SpO2</Th>
+            <Td  border={"1px solid gray"}>{data.spo2}</Td>
           </Tr>
           <Tr>
-            <Th>SpO2</Th>
-            <Td>{data.spo2}</Td>
-          </Tr>
-          <Tr>
-            <Th>Glucose</Th>
-            <Td>{data.gc}</Td>
+            <Th  border={"1px solid gray"}>Glucose</Th>
+            <Td  border={"1px solid gray"}>{data.gc}</Td>
           </Tr>
         </Tbody>
       </Table>

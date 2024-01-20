@@ -491,10 +491,11 @@ const Hero = (props) => {
           spacing={"sm"}
           wrap={"wrap"}
           px={"5"}
-          py={"5"}
+         
+          pt={"3"}
           direction={{ base: "column-reverse", md: "row" }}
-          mt={"10"}
-          gap={"5"}
+          mt={"5"}
+          gap={"4"}
         >
           <Stack>
             <Text

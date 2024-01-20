@@ -58,8 +58,8 @@ const Header = (props) => {
     <NavBarContainer {...props} bg={"bg"}>
       <Link to={"/"}>
         <Logo
-          w="100px"
-          color={["black", "black", "primary.500", "primary.500"]}
+          w="70px"
+          color={"blue"}
         />
       </Link>
       <MenuToggle toggle={toggle} isOpen={isOpen} />
