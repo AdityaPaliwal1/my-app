@@ -21,7 +21,6 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Footer from "./components/footer";
-import styles from "./app.css";
 
 import Register from "./components/register";
 

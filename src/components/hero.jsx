@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect } from "react";
-import styles from "../app.css";
 import {
   Link,
   Box,
@@ -128,9 +127,8 @@ const Hero = (props) => {
         <Box
           w={{ base: "50%", sm: "50%", md: "40%" }}
           mb={{ base: 12, md: 0 }}
-          className={styles.upDownAnimation}
         >
-          <Image className="logo" src="../assest/logo.png" alt="logo" />
+          <Image src="../assest/logo.png" alt="logo" />
         </Box>
       </Flex>
 
