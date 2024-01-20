@@ -40,9 +40,7 @@ function getDataFromQuery() {
   const Name =parts[0];
   const Surname =parts[1];
   const date = Param3.split("t")[0];
-  const formattedDate = `${date.slice(0, 2)}/${date.slice(2, 4)}/${date.slice(
-    4
-  )}`;
+  const formattedDate = `${date.slice( 4)}/${date.slice(2, 4)}/${date.slice(0, 2)}`;
 
   const time = Param3.split("t")[1];
   const formattedTime = `${time.slice(0, 2)}:${time.slice(2)}`;
